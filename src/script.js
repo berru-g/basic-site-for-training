@@ -11,8 +11,8 @@ function openBooking(element) {
   // Récupérer l'URL affiliée à partir de l'attribut data-affiliate-url de la balise parente
   const affiliateUrl = element.closest('#product').dataset.affiliateUrl;
   Swal.fire({
-    title: 'Vérifier les dates disponibles.',
-    text: 'Ouvrir le lien dans Booking.com ?',
+    title: 'Vérifiez les dates disponibles.',
+    text: 'Ouvrir l\'offre dans Booking.com ?',
     icon: 'success',
     showCancelButton: true,
     confirmButtonText: 'Oui',
