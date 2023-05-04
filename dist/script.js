@@ -2,6 +2,7 @@ Swal.fire({
   position: 'bottom-end',
   icon: 'success',
   title: 'Mise à jour des offres',
+  text: 'Les destinations à ne pas manquer',
   showConfirmButton: false,
   timer: 1500
 })

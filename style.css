@@ -124,6 +124,9 @@ img {
 h3 {
   color: #666666;
 }
+h4 {
+  color: #009fe3;
+}
 
 .price {
   text-align: right;
@@ -166,12 +169,15 @@ button:hover {
   background-color: #003580;
 }
 
-.eco {
+.astuce {
   color: white;
-  padding: 5vh 5vh;
-  background-color: #374650;
+  padding: 10vh 10vh;
+  background-color: #003580;
   border: 1px solid #374650;
   border-radius: 25px;
+}
+strong {
+  color: #feba02;
 }
 
 main {
