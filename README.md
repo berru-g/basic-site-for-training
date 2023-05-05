@@ -1,5 +1,5 @@
 # basic site for training
-   - [www.nobullshitjusttravel.com](www.nobullshitjusttravel.com)
+   - [www.nobullshitjusttravel.com](HTTPS://www.nobullshitjusttravel.com)
 
 ## Use for test scrapping secur
 
