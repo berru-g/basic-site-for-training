@@ -359,12 +359,16 @@
               imageHeight: 190,
               imageAlt: 'nobullshitjusttravel.com/amsterdamhotel',
               text: 'Visitez notre site dès maintenant pour découvrir nos offres de voyage les plus populaires',
-              confirmButtonText: 'OK'
+              confirmButtonText: 'OK',
+              showCloseButton: true
             }).then((result) => {
               if (result.isConfirmed) {
-                window.open('dist\bonplan.html', '_blank');
+                window.open('dist/bonplan.html', '_blank');
+              } else if (result.isDismissed) {
+                console.log('Popup fermé');
               }
             });
+            
           }
         });
       };
