@@ -1,5 +1,4 @@
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +17,6 @@
   <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome.min.css">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JFMNXG8LK6"></script>
   <script>
@@ -28,16 +26,13 @@
 
     gtag('config', 'G-JFMNXG8LK6');
   </script>
-
 </head>
-
 <header>
   <h1>No Bullshit Just Travel</h1>
   <p>Pas besoin d'être riche pour voyager comme un roi</p>
   <nav>
     </br>
     <ul id="menu">
-
       <li id="icon"><a
           href="https://www.booking.com/searchresults.en.html?city=-2140479&aid=2334866&no_rooms=1&group_adults=2"
           title="Hôtel"><i class="mdi mdi-home"></i> hôtel</a></li>
@@ -45,15 +40,11 @@
       <li id="icon"><a href="#" title="Car"><i class="mdi mdi-car"></i> car</a></li>
       <li id="icon"><a href="#" title="Festival"><i class="mdi mdi-music-note"></i> Festival</a></li>
     </ul>
-
   </nav>
 </header>
-
 <body>
   <div id="intro">
-
     <h5>Découvrir le monde sans vous ruiner</h5></br>
-
     <p>Nous sommes là pour dénicher les meilleures offres du moment pour vous permettre de voyager comme un roi, sans
       vous soucier des coûts élevés.</br> Que vous cherchiez un week-end romantique, une escapade en famille ou un
       voyage d'affaires, NBJT en partenariat avec Booking vous propose une expérience de voyage de qualité à un prix
@@ -62,8 +53,7 @@
   </div>
   <main>
     <section class="voyages">
-      <h2>Les bons plan du moment</h2>
-      
+      <h2>Les bons plan du moment</h2>    
       <ul>
         <!--article 1-->
         <li id="product"
@@ -82,8 +72,6 @@
               <i class="mdi mdi-star"></i>
               <i class="mdi mdi-star"></i>
               <i id="unavailable" class="mdi mdi-star"></i>
-
-
             </div>
             <div class="article">
               <i class="mdi mdi-silverware-fork-knife" id="unavailable" title="repas inclus"></i>
@@ -150,9 +138,7 @@
         </li>
       </ul>
     </section>
-
     <h2>Réservez dès maintenant</h2></br>
-
     <ins class="bookingaff" data-aid="2333430" data-target_aid="2333430" data-prod="map" data-width="100%"
       data-height="590" data-lang="ualng" data-dest_id="0" data-dest_type="landmark" data-latitude="52.3675734"
       data-longitude="4.9041389" data-mwhsb="0" data-address="Amsterdam, Netherlands">
@@ -177,8 +163,6 @@
         p.parentNode.insertBefore(s, p);
       })(document, 'script', '//cf.bstatic.com/static/affiliate_base/js/flexiproduct.js');
     </script>
-
-
     <section class="hotels">
       <h2>Nos Hôtels coup de coeur</h2>
       <ul>
@@ -208,7 +192,6 @@
               <i class="mdi mdi-wifi" id="available" title="wifi-inclus"></i>
               <i class="mdi mdi-city" id="available" title="proche du centre"></i>
               <i class="mdi mdi-dumbbell" id="available" title="salle de sport"></i>
-
             </div>
           </div>
         </li>
@@ -238,7 +221,6 @@
               <i class="mdi mdi-wifi" id="available" title="wifi-inclus"></i>
               <i class="mdi mdi-city" id="available" title="proche du centre"></i>
               <i class="mdi mdi-weather-sunny" id="available" title="terrasse"></i>
-
             </div>
           </div>
         </li>
@@ -274,7 +256,6 @@
         </li>
       </ul>
     </section></br>
-
     <div class="astuce">
       <p>
       <h4>Quelques astuces pour économiser de l'argent pendant votre voyage :</h4></br>
@@ -287,7 +268,6 @@
         <li>Faites des visites gratuites ou peu coûteuses</li>
         <li>Évitez les achats impulsifs</li>
       </ul>
-
       </br>
       <strong>Voyagez hors saison :</strong> Les prix des vols, des hébergements et des activités touristiques peuvent
       considérablement augmenter pendant les périodes de pointe. En voyageant hors saison, vous pouvez économiser de
@@ -359,10 +339,41 @@
 			<input type="submit" value="Réserver">
 		</form>
 	</section>-->
-
   </main>
-
+</body>
   <footer>
+    <script>
+      const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 1.0
+      };
+      
+      const callback = (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            Swal.fire({
+              title: 'Découvrez nos offres coups de coeur',
+              imageUrl: 'https://cf.bstatic.com/xdata/images/hotel/square600/192222259.webp?k=8a61b65a273e5e7190c92c2aacc4d956d47527ab950451cb9a5a223fad225b57&o=&s=1',
+              imageWidth: 300,
+              imageHeight: 190,
+              imageAlt: 'nobullshitjusttravel.com/amsterdamhotel',
+              text: 'Visitez notre site dès maintenant pour découvrir nos offres de voyage les plus populaires',
+              confirmButtonText: 'OK'
+            }).then((result) => {
+              if (result.isConfirmed) {
+                window.open('dist\bonplan.html', '_blank');
+              }
+            });
+          }
+        });
+      };
+      
+      const observer = new IntersectionObserver(callback, options);
+      const target = document.querySelector('footer');
+      observer.observe(target);
+    </script>
     <p>&copy; NoBullshitJustTravel 2023 - Tous droits réservés - <a
         href="mailto:lea-bruger@nobullshitjusttravel.com" id="contact">Nous contacter</a></p>
   </footer>
+</html>
