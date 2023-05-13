@@ -1,84 +1,149 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - basic site for training</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/4.0.0/iconfont/material-icons.min.css'>
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro'><link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
 <html lang="fr">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="shortcut icon" href="dist\img\airplane.gif" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon"
+    href="https://github.com/berru-g/Price-comparator/blob/master/src/around-the-world.gif?raw=true" />
   <meta name=viewport content="width=device-width, initial-scale=1">
-  <meta name=description content="Les meilleures offres de vol et d'hôtel pour vous permettre de voyager comme un roi, sans vous soucier des coûts élevés">
+  <meta name=description
+    content="Les meilleures offres de vol et d'hôtel pour vous permettre de voyager comme un roi, sans vous soucier des coûts élevés">
   <meta name=author content>
-  <meta name=keywords
-    content="bon plan booking, vols pas cher, partir pas cher">
+  <meta name=keywords content="amsterdam hotel, hotel amsterdam, bon plan booking, vols pas cher, partir pas cher">
   <meta property=og:url content=https://github.com/berru-g />
   <link rel=canonical href=https://github.com/berru-g />
-	<title>gotel bon plan booking</title>
-	<link rel="stylesheet" href="style.css">
-  
+  <title>No Bullshit Just Travel</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
   <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
-  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome.min.css">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-</head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JFMNXG8LK6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-	<header>
-    <h1>No bullshit just travel</h1>
-		<p>Pas besoin d'être riche pour voyager comme un roi</p>
-		<nav>
-      </br>
-			<ul id="menu">
-   
-	      <li id="icon"><a href="../index.html" title="Home"><i class="mdi mdi-home"></i> home</a></li>
-	      <li id="icon"><a href="#" title="Avion"><i class="mdi mdi-airplane"></i> vols</a></li>
-
-			</ul>
-    
-		</nav>
-	</header>
-  <body>
-  <div id="intro">
-    
-    <h5>Les avantages de réserver avec notre site de voyage</h5></br>
-  
- <p>Nous sommes fiers de proposer une vaste sélection d'offres de vol en partenariat avec Booking.</br> 
-  Notre site de réservation de voyages est conçu pour rendre le processus de réservation simple et facile pour vous. 
-  Nous sommes convaincus que vous adorerez notre sélection d'offres de voyage à des prix abordables. </br>
-  En réservant avec nous, vous pouvez également bénéficier de la garantie de réservation Booking, qui garantit la meilleure expérience de voyage possible. 
-  <!--<button onclick="open()"> Recevoir les dernières offres</button>.--></p>
-</div>
-	<main>
-
-
-    <ins class="bookingaff" data-aid="2338913" data-target_aid="2338913" data-prod="dfl2" data-width="100%" data-height="auto" data-lang="en" data-dest_id="-2140479" data-dest_type="city" data-df_num_properties="3">
-      <!-- Anything inside will go away once widget is loaded. -->
-          <a href="//www.booking.com?aid=2338913">Booking.com</a>
-  </ins>
-  <script type="text/javascript">
-      (function(d, sc, u) {
-        var s = d.createElement(sc), p = d.getElementsByTagName(sc)[0];
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = u + '?v=' + (+new Date());
-        p.parentNode.insertBefore(s,p);
-        })(document, 'script', '//cf.bstatic.com/static/affiliate_base/js/flexiproduct.js');
+    gtag('config', 'G-JFMNXG8LK6');
   </script>
-
-</main>
-
-<footer>
-	<p>&copy; Gofast site 2023 - Tous droits réservés</p>
-</footer>
-<!-- partial -->
-  <script  src="./script.js"></script>
-
+</head>
+<header>
+  <h1>No Bullshit Just Travel</h1>
+  <p>Pas besoin d'être riche pour voyager comme un roi</p>
+  <nav>
+    </br>
+    <ul id="menu">
+      <li id="icon"><a
+          href="../index.html"
+          title="Hôtel"><i class="mdi mdi-home"></i> hôtel</a></li>
+      <li id="icon"><a href="dist\index.html" title="Avion"><i class="mdi mdi-airplane"></i> vols</a></li>
+      <li id="icon"><a href="#" title="Car"><i class="mdi mdi-car"></i> car</a></li>
+      <li id="icon"><a href="#" title="Festival"><i class="mdi mdi-music-note"></i> Festival</a></li>
+    </ul>
+  </nav>
+</header>
+<body>
+  <div id="intro">
+    <h5>Découvrir le monde sans vous ruiner</h5></br>
+    <p>... <!--<button onclick="open()"> Recevoir les dernières offres</button>.--></p>
+  </div>
+  <main>
+    <section class="hotels">
+      <h2>Les bons plans de nos partenaires</h2>
+      <ul>
+        <!--article 4-->
+        <li id="product"
+          data-affiliate-url="https://www.booking.com/hotel/nl/estherea.en-gb.html?aid=2334866&sid=4464237e067cab8dd8574f7526222e84&dest_id=-2140479;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=3;hpos=3;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1683729262;srpvid=cda0667603390220;type=total;ucfs=1&#hotelTmpl">
+          <img
+            src="https://cf.bstatic.com/xdata/images/hotel/square600/192222259.webp?k=8a61b65a273e5e7190c92c2aacc4d956d47527ab950451cb9a5a223fad225b57&o=&s=1"
+            alt="Hotel Estheréa">
+          <h3>Hotel Estheréa</h3>
+          <p> Stay in the heart of Amsterdam. Hotel Estheréa is set along the Singel canal in the centre of Amsterdam.
+            </br>Read <a
+              href="https://www.booking.com/hotel/nl/estherea.en-gb.html?aid=2334866&sid=4464237e067cab8dd8574f7526222e84&dest_id=-2140479;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=3;hpos=3;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1683729262;srpvid=cda0667603390220;type=total;ucfs=1&#tab-reviews">tab
+              reviews</a>.</p>
+          <span class="price">À partir de 48 €/ nuit</span>
+          <button onclick="openBooking(this)">Réserver maintenant</button>
+          </a>
+          <div class="hotel-item">
+            <div class="hotel-rating" title="4.6/5 3.972 votes">
+              <i class="mdi mdi-star"></i>
+              <i class="mdi mdi-star"></i>
+              <i class="mdi mdi-star"></i>
+              <i class="mdi mdi-star"></i>
+            </div>
+            <div class="article">
+              <i class="mdi mdi-silverware-fork-knife" id="unavailable" title="repas inclus"></i>
+              <i class="mdi mdi-wifi" id="available" title="wifi-inclus"></i>
+              <i class="mdi mdi-city" id="available" title="proche du centre"></i>
+              <i class="mdi mdi-dumbbell" id="available" title="salle de sport"></i>
+            </div>
+          </div>
+        </li>
+        <!--article 5-->
+        <li id="product"
+          data-affiliate-url="https://www.booking.com/hotel/nl/casa-400.en-gb.html?aid=2334866&sid=b1d577e73224c5de2cb93c30ad443eb2&dest_id=-2140479;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=15;hpos=15;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1683729262;srpvid=cda0667603390220;type=total;ucfs=1&">
+          <img
+            src="https://cf.bstatic.com/xdata/images/hotel/square600/213819734.webp?k=be79fd0c9050646ec912726b4aa0a03e8ad47370494af51d9183cde71eeb1b64&o=&s=1"
+            alt="Sélection hotel nobullshitjusttravel amsterdam">
+          <h3>Hotel Casa Amsterdam</h3>
+          <p>Hotel Casa Amsterdam is a modern hotel offering a bar, rooftop terrace (only opens during the summertime)
+            and an in-house restaurant.</br>Read <a
+              href="https://www.booking.com/hotel/nl/casa-400.en-gb.html?aid=2334866&sid=b1d577e73224c5de2cb93c30ad443eb2&dest_id=-2140479;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=15;hpos=15;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1683729262;srpvid=cda0667603390220;type=total;ucfs=1&#tab-reviews">tab
+              reviews</a>.</p>
+          <span class="price">À partir de -- €</span>
+          <button onclick="openBooking(this)">Réserver maintenant</button>
+          </a>
+          <div class="hotel-item">
+            <div class="hotel-rating" title="4.8/5 7.002 votes">
+              <i class="mdi mdi-star"></i>
+              <i class="mdi mdi-star"></i>
+              <i class="mdi mdi-star"></i>
+              <i class="mdi mdi-star"></i>
+            </div>
+            <div class="article">
+              <i class="mdi mdi-silverware-fork-knife" id="available" title="repas inclus"></i>
+              <i class="mdi mdi-wifi" id="available" title="wifi-inclus"></i>
+              <i class="mdi mdi-city" id="available" title="proche du centre"></i>
+              <i class="mdi mdi-weather-sunny" id="available" title="terrasse"></i>
+            </div>
+          </div>
+        </li>
+        <!--article 6-->
+        <li id="product"
+          data-affiliate-url="https://www.booking.com/hotel/nl/the-exchange.en-gb.html?aid=2334866&sid=b1d577e73224c5de2cb93c30ad443eb2&dest_id=-2140479;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=25;hpos=25;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1683729262;srpvid=cda0667603390220;type=total;ucfs=1&#hotelTmpl">
+          <img
+            src="https://cf.bstatic.com/xdata/images/hotel/square600/331967743.webp?k=274d5add85b6638ebee3a7f0e24f8a6623dc46a170eb8cc06627a543674af574&o=&s=1"
+            alt="Voyage 3">
+          <h3>Hotel The Exchange</h3>
+          <p>Situated in the heart of Amsterdam’s city centre, Hotel The Exchange is an independent fashion hotel that
+            playfully weaves together hotel design with fashion in unique rooms.</br>Read <a
+              href="https://www.booking.com/hotel/nl/the-exchange.en-gb.html?aid=2334866&sid=b1d577e73224c5de2cb93c30ad443eb2&dest_id=-2140479;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=25;hpos=25;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1683729262;srpvid=cda0667603390220;type=total;ucfs=1&#tab-reviews">tab
+              reviews</a>.</p>
+          <span class="price">À partir de -- €</span>
+          <button onclick="openBooking(this)">Réserver maintenant</button>
+          </a>
+          <div class="hotel-item">
+            <div class="hotel-rating" title="4.3/5 3.493 votes">
+              <i class="mdi mdi-star"></i>
+              <i class="mdi mdi-star"></i>
+              <i class="mdi mdi-star"></i>
+              <i id="unavailable" class="mdi mdi-star"></i>
+            </div>
+            <div class="article">
+              <i class="mdi mdi-silverware-fork-knife" id="available" title="repas inclus"></i>
+              <i class="mdi mdi-wifi" id="available" title="wifi-inclus"></i>
+              <i class="mdi mdi-city" id="available" title="proche du centre"></i>
+              <i class="mdi mdi-image-filter-hdr" id="available" title="vue"></i>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section></br>
+  </main>
 </body>
+  <footer>
+    <p>&copy; NoBullshitJustTravel 2023 - Tous droits réservés - <a
+        href="mailto:lea-bruger@nobullshitjusttravel.com" id="contact">Nous contacter</a></p>
+  </footer>
 </html>
