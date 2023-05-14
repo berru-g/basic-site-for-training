@@ -228,6 +228,8 @@ footer {
   background-color: #003580;
   color: white;
   font-size:small;
+  display: flex;
+  justify-content: space-around;
 }
 #contact {
   color: white;

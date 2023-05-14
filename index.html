@@ -279,6 +279,8 @@
         clear: center;
         font: 14px Helvetica, Arial, sans-serif;
         width: 100%;
+        border-radius: 8px;
+        bord
       }
 
       /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
@@ -422,13 +424,13 @@
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           Swal.fire({
-            title: 'Découvrez nos offres coups de coeur',
+            title: 'Découvrez nos offres aux prix imbattable',
             imageUrl: 'https://cf.bstatic.com/xdata/images/hotel/square600/192222259.webp?k=8a61b65a273e5e7190c92c2aacc4d956d47527ab950451cb9a5a223fad225b57&o=&s=1',
             imageWidth: 300,
             imageHeight: 190,
             imageAlt: 'nobullshitjusttravel.com/amsterdamhotel',
-            text: 'Visitez notre site dès maintenant pour découvrir nos offres de voyage les plus populaires',
-            confirmButtonText: 'OK',
+            text: 'Les meilleurs deal de Booking du moment',
+            confirmButtonText: 'voir les offres',
             showCloseButton: true
           }).then((result) => {
             if (result.isConfirmed) {
