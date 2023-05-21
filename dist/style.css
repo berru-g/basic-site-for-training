@@ -25,7 +25,22 @@ header {
 	color: #fff;
 	padding: 20px;
 }
-
+.gallery {
+  display: flex;
+  height: 20rem;
+  padding: 4rem;
+  gap: 1rem;
+}
+.gallery > div {
+  flex: 1rem;
+  border-radius: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all .7s cubic-bezier(.25, .4, .45, 1.4);
+}
+.gallery > div:hover {
+  flex:5;
+}
 /* Animation */
 h1 {
   animation-name: slide-in-left;
