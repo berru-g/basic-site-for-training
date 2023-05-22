@@ -112,7 +112,28 @@ body {
   font-family: Arial, sans-serif;
 }
 
-#product:hover {}
+.gallery {
+  padding: 5vh 10vh;
+  display: flex;
+  height: 30rem;
+  gap: 1rem;
+}
+.gallery > div {
+  flex: 1rem;
+  border-radius: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all .7s cubic-bezier(.25, .4, .45, 1.4);
+}
+.gallery > div:hover {
+  flex:5;
+}
+.liengal {
+  color: #fff;
+  text-align: center;
+  bottom: 0vh;
+  text-decoration: none;
+}
 
 img {
   max-width: 300px;
