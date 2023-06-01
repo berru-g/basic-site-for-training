@@ -3,7 +3,7 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 body {
-  background-color: #3d87cc;
+  background-color: #59c3c3;
 }
 /* Animation */
 img {
@@ -85,7 +85,7 @@ img {
 .container {
   max-width: 64rem;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 0rem;
 }
 h2 {
   font-size: 2.5rem;
@@ -100,7 +100,7 @@ h2 {
 h3 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #3d87cc;
+  color: #59c3c3;
   text-shadow: -0.125rem -0.125rem 0 #fff;
   transform: rotate(-5deg) skew(-5deg) translateY(-1rem);
   margin-bottom: 1rem;
@@ -117,7 +117,7 @@ h3 {
   top: 0;
   width: 100%;
   aspect-ratio: 2.3941018767;
-  background: #003580;
+  background: #f45b69;
   mask-image: url("https://assets.codepen.io/619833/mask_7.svg");
   -webkit-mask-image: url("https://assets.codepen.io/619833/mask_7.svg");
   -webkit-mask-repeat: no-repeat;
@@ -247,8 +247,10 @@ li {
   animation-duration: 1s;
 }
 #intro {
-  padding: 15vh 15vh;
-  color:#fff;
+  padding: 10vh 10vh;
+  color:#003580;
+  background-color: #fff;
+  width:100%;
 }
 
 img {
@@ -261,7 +263,7 @@ img {
     color: #666666;
   }
   h4 {
-    color: #009fe3;
+    color: #59c3c3;
   }
   
   .price {
@@ -279,16 +281,16 @@ img {
   
   .hotel-rating {
     font-size: 24px;
-    color: #feba02;
+    color: #ffce00;
   }
   
   #review {
-    color:#feba02;
+    color:#ffce00;
   }
   
   /*disponibilité et note color*/
   #available {
-    color: #0ab21b;
+    color: #009543;
   }
   
   #unavailable {
@@ -321,10 +323,11 @@ img {
   }
   
   main {
-    max-width: 1200px;
+    
+    width:100%;
     margin: 0 auto;
     padding: 40px;
-    background-color: #fdf9f0;
+    background-color: #fff;
   }
   
   section h2 {
