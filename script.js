@@ -12,7 +12,7 @@ function afficherPopup() {
   }).then((result) => {
     if (result.value) {
       // Rediriger l'utilisateur vers la balise souhaitée
-      var balise = document.querySelector('.ins');
+      var balise = document.querySelector('.bookingaff');
       if (balise) {
         balise.scrollIntoView({ behavior: 'smooth' });
       }
