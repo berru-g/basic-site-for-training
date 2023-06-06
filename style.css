@@ -6,7 +6,7 @@ header {
   background-color: #009fe3;
 }
 /* Animation */
-img {
+#avion {
   animation-name: slide-in-left;
   animation-duration: 2s;
 }
