@@ -209,7 +209,12 @@ h3 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
+.pub {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 50px;
+}
 
 #icon {
   border: 0.5px solid white;
